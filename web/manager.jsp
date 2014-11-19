@@ -24,7 +24,7 @@
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#">View</a></li>
-                                <li><a href="#">Edit</a></li>
+                                <li><a href="<%=request.getContextPath()%>/edit.jsp">Edit</a></li>
                                 <li><a href="<%=request.getContextPath()%>/login.jsp">Login</a></li>
                             </ul>
                         </div>

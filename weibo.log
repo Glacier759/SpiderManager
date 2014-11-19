@@ -1,14 +1,2 @@
-0    DEBUG [2014-11-17 09:25:35]  Request:
-2    DEBUG [2014-11-17 09:25:35]  POSThttps://api.weibo.com/oauth2/access_token
-0    DEBUG [2014-11-17 09:44:16]  Request:
-1    DEBUG [2014-11-17 09:44:16]  POSThttps://api.weibo.com/oauth2/access_token
-0    DEBUG [2014-11-17 10:05:04]  Request:
-2    DEBUG [2014-11-17 10:05:04]  POSThttps://api.weibo.com/oauth2/access_token
-0    DEBUG [2014-11-17 10:05:05]  Request:
-2    DEBUG [2014-11-17 10:05:05]  POSThttps://api.weibo.com/oauth2/access_token
-1    DEBUG [2014-11-17 10:05:05]  Request:
-2    DEBUG [2014-11-17 10:05:05]  POSThttps://api.weibo.com/oauth2/access_token
-0    DEBUG [2014-11-17 10:05:06]  Request:
-2    DEBUG [2014-11-17 10:05:06]  POSThttps://api.weibo.com/oauth2/access_token
-0    DEBUG [2014-11-17 15:23:55]  Request:
-63   DEBUG [2014-11-17 15:23:55]  POSThttps://api.weibo.com/oauth2/access_token
+0    DEBUG [2014-11-18 22:29:00]  Request:
+25   DEBUG [2014-11-18 22:29:00]  POSThttps://api.weibo.com/oauth2/access_token

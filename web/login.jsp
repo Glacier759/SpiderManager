@@ -22,9 +22,9 @@
                 <div class="inner">
                     <h2 class="masthead-brand">Spider Manager</h2>
                     <ul class="nav masthead-nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="<%=request.getContextPath()%>/manager.jsp">Home</a></li>
                         <li><a href="#">View</a></li>
-                        <li><a href="#">Edit</a></li>
+                        <li><a href="<%=request.getContextPath()%>/edit.jsp">Edit</a></li>
                         <li class="active"><a href="#">Login</a></li>
                     </ul>
                 </div>
