@@ -13,7 +13,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">主页</a></li>
+                    <li><a href="<%=request.getContextPath()%>/index.jsp">主页</a></li>
                     <li><a href="#">监控</a></li>
                     <li><a href="#">帮助</a></li>
                     <li><a href="#">登陆</a></li>
