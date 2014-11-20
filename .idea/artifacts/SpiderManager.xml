@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SpiderManager:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/SpiderManager_war_exploded</output-path>
-    <root id="root">
+  <artifact type="war" name="SpiderManager">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpiderManager</output-path>
+    <root id="archive" name="SpiderManager.war">
       <element id="javaee-facet-resources" facet="SpiderManager/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

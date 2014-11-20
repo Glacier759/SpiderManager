@@ -99,9 +99,9 @@ public class JSONObject {
          * so the clone method returns itself.
          * @return     NULL.
          */
-        protected final Object clone() {
-            return this;
-        }
+//        protected final Object clone() {
+//            return this;
+//        }
 
 
         /**

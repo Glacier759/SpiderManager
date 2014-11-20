@@ -24,6 +24,10 @@ public class Oauth extends Weibo {
 	// ----------------------------针对站内应用处理SignedRequest获取accesstoken----------------------------------------
 	public String user_id;
 
+    public Oauth() {
+
+    }
+
 	public String getToken() {
 		return access_token;
 	}

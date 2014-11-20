@@ -1,3 +1,7 @@
+<%@ page import="java.net.URL" %>
+<%@ page import="java.net.HttpURLConnection" %>
+<%@ page import="java.io.BufferedReader" %>
+<%@ page import="java.io.InputStreamReader" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -7,12 +11,31 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<html>
+<%--<html xmlns:wb="http://open.weibo.com/wb">--%>
     <%@include file="header.jsp"%>
     <body>
+    <%
+        //{"access_token":"2.00xmUcWC0BMARVc5da106b53KhrLRD","remind_in":"157679999","expires_in":157679999,"uid":"2314283235"}
+        String code = request.getParameter("code");
+        String accessTokenURL = null;
+        if (code != null) {
+            accessTokenURL = "https://api.weibo.com/oauth2/access_token?client_id=462118737&client_secret=94d365eb34fb0344fb08a8c9cb640ff1&grant_type=authorization_code&redirect_uri=http://spider.glacierlx.com&code=" + code;
+            URL url = new URL(accessTokenURL);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("POST");
+            connection.connect();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String json = reader.readLine();
+            if ( json != null ) {
+                %>
+        <h1><%=json%></h1>
+    <%
+            }
+        }
+    %>
     <%@include file="top.jsp"%>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" value="" id="json">
             <%@include file="menu.jsp"%>
             <div class="col-md-10">
                 <br />
@@ -26,7 +49,20 @@
     <script src="<%=request.getContextPath()%>/resource/Bootstrap/js/bootstrap.min.js"></script>
     <script src="<%=request.getContextPath()%>/resource/js/highcharts.js"></script>
     <script src="<%=request.getContextPath()%>/resource/js/exporting.js"></script>
-
+    <script>
+        function getAccessToken() {
+            $.ajax({
+                url: <%=accessTokenURL%>,
+                type: "GET",
+                dataType: "JSON",
+                success: function(data) {
+                    var objson = eval(data);
+                    document.getElementById('json').setAttribute('value',objson.access_token);
+                    document.getElementById('json').setAttribute('test','sadas');
+                }
+            })
+        }
+    </script>
     <script>
         $(function () {
 
