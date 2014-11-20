@@ -15,5 +15,4 @@
         <link href="<%=request.getContextPath()%>/resource/css/style.css" rel="stylesheet" />
         <link href="<%=request.getContextPath()%>/resource/css/dashboard.css" rel="stylesheet" />
         <link rel="shortcut icon" href="<%=request.getContextPath()%>/resource/favicon.ico" type="image/x-icon" />
-        <%--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=268617844" type="text/javascript" charset="utf-8"></script>--%>
     </head>
