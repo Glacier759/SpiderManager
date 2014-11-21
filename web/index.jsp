@@ -2,6 +2,7 @@
 <%@ page import="java.net.HttpURLConnection" %>
 <%@ page import="java.io.BufferedReader" %>
 <%@ page import="java.io.InputStreamReader" %>
+<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -11,11 +12,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<%--<html xmlns:wb="http://open.weibo.com/wb">--%>
     <%@include file="header.jsp"%>
     <body>
     <%
-        //{"access_token":"2.00xmUcWC0BMARVc5da106b53KhrLRD","remind_in":"157679999","expires_in":157679999,"uid":"2314283235"}
         String code = request.getParameter("code");
         String accessTokenURL = null;
         if (code != null) {
@@ -27,9 +26,7 @@
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String json = reader.readLine();
             if ( json != null ) {
-                %>
-        <h1><%=json%></h1>
-    <%
+                AccessTokenJSON.setAccessTokenJSON(json);
             }
         }
     %>

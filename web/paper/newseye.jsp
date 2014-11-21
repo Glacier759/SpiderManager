@@ -15,21 +15,90 @@
                 <%@include file="/menu.jsp"%>
                 <div class="col-md-10">
                     <br />
-
-                    <%--<form class="form" method="post" action="#">--%>
-                        <%--<div class="form-group">--%>
-                            <%--<textarea name="content" class="form-control" id="newseyeconfig" rows="10" value="asdas">--%>
-
-                            <%--</textarea>--%>
-                        <%--</div>--%>
-                    <%--</form>--%>
-                    <%--<br />--%>
-                    <%--<div id="distribution" class="d2" style="min-width: 310px; height: 500px; margin: 0 auto"></div>--%>
-                    <%--<br />--%>
-                    <%--<div id="proportion" class="d2" style="min-width: 310px; height: 500px; margin: 0 auto"></div>--%>
-
                     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
+                    <form class="form" method="post" action="#">
+                        <div class="form-group">
+                            <h3>配置编辑</h3>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">配置说明</div>
+                                <div class="panel-body">啊添加一个类啊添加一个起始文件啊添加一堆一堆属性参数啊啊啊</div>
+                            </div>
+                            <div id="paper-config">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">报刊配置</div>
+                                    <div class="panel-body">
+                                        <div class="panel panel-info">
+                                            <div class="panel-heading">报刊信息</div>
+                                            <div class="panel-body">
+                                                <div id="paperinfo">
+                                                    <div class="row" name="newspaper">
+                                                        <div class="col-lg-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">报刊名称</span>
+                                                                <input type="text" class="form-control" placeholder="人民日报"
+                                                                       name="newspapername" count="1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">起始地址</span>
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="http://paper.people.com.cn/rmrb/"
+                                                                       name="starturl" count="1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">编码</span>
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="UTF-8"
+                                                                       name="encode" count="1">
+                                                            </div>
+                                                        </div>
+                                                        <br/><br/>
+                                                    </div>
+                                                </div>
+                                                <!--paperinfo-->
+                                                <div class="row">
+                                                    <div class="col-lg-2">
+                                                        <div class="input-group">
+                                                            <button type="button" class="btn btn-default" id="addnewspaper">
+                                                                <span class="glyphicon glyphicon-plus" />
+                                                            </button>
+                                                            <button type="button" class="btn btn-default" id="minusnewspaper">
+                                                                <span class="glyphicon glyphicon-minus" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  <!--一类报刊信息面板-->
+                                    </div>
+                                </div> <!--所有报刊信息面板-->
+                            </div> <!--所有报刊配置信息-->
+                            <button type="button" class="btn btn-success" id="addclass">增加类别</button>
+                            <button type="button" class="btn btn-warning" id="minusclass">删除类别</button>
+                            <button class="btn btn-primary" type="button" id="save">提交配置</button>
+                            <div class="modal fade" id="confirm">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">保存配置</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>确认提交当前配置文件？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -37,6 +106,57 @@
         <script src="<%=request.getContextPath()%>/resource/Bootstrap/js/bootstrap.min.js"></script>
         <script src="<%=request.getContextPath()%>/resource/js/highcharts.js"></script>
         <script src="<%=request.getContextPath()%>/resource/js/exporting.js"></script>
+        <script>
+            $(function() {
+                $("#save").click(function() {
+                    $("#confirm").modal("toggle");
+                });
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#addnewspaper").click(function() {
+                    var paperinfo = document.getElementById('paperinfo');
+                    var paper = paperinfo.lastElementChild;
+                    var newpaper = paper.cloneNode(true);
+                    paperinfo.appendChild(newpaper);
+                });
+            });
+            $(function() {
+                $("#minusnewspaper").click(function() {
+                    var paperinfo = document.getElementById('paperinfo');
+                    if ( paperinfo.childElementCount == 1 ) {
+
+                    }
+                    else {
+                        var paper = paperinfo.lastElementChild;
+                        paperinfo.removeChild(paper);
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#addclass").click(function() {
+                    var paperclass = document.getElementById('paper-config');
+                    var newpanel = paperclass.lastElementChild.cloneNode(true);
+                    paperclass.appendChild(newpanel);
+
+                });
+            });
+            $(function() {
+                $("#minusclass").click(function() {
+                    var paperclass = document.getElementById('paper-config');
+                    if ( paperclass.childElementCount == 1 ) {
+
+                    }
+                    else {
+                        var newpanel = paperclass.lastElementChild;
+                        paperclass.removeChild(newpanel);
+                    }
+                });
+            });
+        </script>
         <script>
             document.getElementById('newseye').setAttribute('class','active');
         </script>
