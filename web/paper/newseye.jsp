@@ -32,12 +32,12 @@
                                             <div class="panel-heading">报刊信息</div>
                                             <div class="panel-body">
                                                 <div id="paperinfo">
-                                                    <div class="row" name="newspaper">
+                                                    <div class="row" name="newspaper" count="1">
                                                         <div class="col-lg-4">
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">报刊名称</span>
                                                                 <input type="text" class="form-control" placeholder="人民日报"
-                                                                       name="newspapername" count="1">
+                                                                       name="newspapername" />
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6">
@@ -45,7 +45,8 @@
                                                                 <span class="input-group-addon">起始地址</span>
                                                                 <input type="text" class="form-control"
                                                                        placeholder="http://paper.people.com.cn/rmrb/"
-                                                                       name="starturl" count="1">
+                                                                       name="starturl" />
+                                                                <span class="input-group-addon"><input type="checkbox" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-2">
@@ -53,7 +54,7 @@
                                                                 <span class="input-group-addon">编码</span>
                                                                 <input type="text" class="form-control"
                                                                        placeholder="UTF-8"
-                                                                       name="encode" count="1">
+                                                                       name="encode" />
                                                             </div>
                                                         </div>
                                                         <br/><br/>
@@ -63,10 +64,10 @@
                                                 <div class="row">
                                                     <div class="col-lg-2">
                                                         <div class="input-group">
-                                                            <button type="button" class="btn btn-default" id="addnewspaper">
+                                                            <button type="button" class="btn btn-default" name="addnewspaper">
                                                                 <span class="glyphicon glyphicon-plus" />
                                                             </button>
-                                                            <button type="button" class="btn btn-default" id="minusnewspaper">
+                                                            <button type="button" class="btn btn-default " name="minusnewspaper">
                                                                 <span class="glyphicon glyphicon-minus" />
                                                             </button>
                                                         </div>
@@ -74,11 +75,17 @@
                                                 </div>
                                             </div>
                                         </div>  <!--一类报刊信息面板-->
+                                        <div class="panel panel-info">
+                                            <div class="panel-heading">版面地址过滤</div>
+                                            <div class="panel-body">
+                                                
+                                            </div>
+                                        </div> <!--版面地址过滤-->
                                     </div>
                                 </div> <!--所有报刊信息面板-->
                             </div> <!--所有报刊配置信息-->
-                            <button type="button" class="btn btn-success" id="addclass">增加类别</button>
-                            <button type="button" class="btn btn-warning" id="minusclass">删除类别</button>
+                            <button type="button" class="btn btn-success disabled" id="addclass">增加类别</button>
+                            <button type="button" class="btn btn-warning disabled" id="minusclass">删除类别</button>
                             <button class="btn btn-primary" type="button" id="save">提交配置</button>
                             <div class="modal fade" id="confirm">
                                 <div class="modal-dialog">
@@ -115,15 +122,16 @@
         </script>
         <script>
             $(function() {
-                $("#addnewspaper").click(function() {
+                $("[name='addnewspaper']").click(function() {
                     var paperinfo = document.getElementById('paperinfo');
                     var paper = paperinfo.lastElementChild;
                     var newpaper = paper.cloneNode(true);
+                    newpaper.setAttribute('count',parseInt(newpaper.getAttribute('count'))+1);
                     paperinfo.appendChild(newpaper);
                 });
             });
             $(function() {
-                $("#minusnewspaper").click(function() {
+                $("[name='minusnewspaper']").click(function() {
                     var paperinfo = document.getElementById('paperinfo');
                     if ( paperinfo.childElementCount == 1 ) {
 
@@ -135,28 +143,28 @@
                 });
             });
         </script>
-        <script>
-            $(function() {
-                $("#addclass").click(function() {
-                    var paperclass = document.getElementById('paper-config');
-                    var newpanel = paperclass.lastElementChild.cloneNode(true);
-                    paperclass.appendChild(newpanel);
+        <%--<script>--%>
+            <%--$(function() {--%>
+                <%--$("#addclass").click(function() {--%>
+                    <%--var paperclass = document.getElementById('paper-config');--%>
+                    <%--var newpanel = paperclass.lastElementChild.cloneNode(true);--%>
+                    <%--paperclass.appendChild(newpanel);--%>
 
-                });
-            });
-            $(function() {
-                $("#minusclass").click(function() {
-                    var paperclass = document.getElementById('paper-config');
-                    if ( paperclass.childElementCount == 1 ) {
+                <%--});--%>
+            <%--});--%>
+            <%--$(function() {--%>
+                <%--$("#minusclass").click(function() {--%>
+                    <%--var paperclass = document.getElementById('paper-config');--%>
+                    <%--if ( paperclass.childElementCount == 1 ) {--%>
 
-                    }
-                    else {
-                        var newpanel = paperclass.lastElementChild;
-                        paperclass.removeChild(newpanel);
-                    }
-                });
-            });
-        </script>
+                    <%--}--%>
+                    <%--else {--%>
+                        <%--var newpanel = paperclass.lastElementChild;--%>
+                        <%--paperclass.removeChild(newpanel);--%>
+                    <%--}--%>
+                <%--});--%>
+            <%--});--%>
+        <%--</script>--%>
         <script>
             document.getElementById('newseye').setAttribute('class','active');
         </script>
