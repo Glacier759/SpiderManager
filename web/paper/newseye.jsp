@@ -17,7 +17,7 @@
                     <br />
                     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-                    <form class="form" method="post" action="#">
+                    <form class="form" method="get" action="#">
                         <div class="form-group">
                             <h3>配置编辑</h3>
                             <div class="panel panel-default">
@@ -86,7 +86,7 @@
                             </div> <!--所有报刊配置信息-->
                             <button type="button" class="btn btn-success disabled" id="addclass">增加类别</button>
                             <button type="button" class="btn btn-warning disabled" id="minusclass">删除类别</button>
-                            <button class="btn btn-primary" type="button" id="save">提交配置</button>
+                            <button class="btn btn-primary" type="submit" id="save">提交配置</button>
                             <div class="modal fade" id="confirm">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
