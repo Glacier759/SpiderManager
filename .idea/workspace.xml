@@ -31,8 +31,8 @@
       <file leaf-file-name="newseye.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/paper/newseye.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26535627" vertical-offset="1512" max-vertical-offset="4824">
-              <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.6022305" vertical-offset="378" max-vertical-offset="4824">
+              <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -63,7 +63,65 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-13.740741" vertical-offset="331" max-vertical-offset="4986">
               <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-              <folding />
+              <folding>
+                <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+                <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+                <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+                <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+                <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+                <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+                <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+                <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+                <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+                <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+                <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+                <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+                <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+                <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+                <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+                <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+                <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+                <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+                <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+                <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+                <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+                <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+                <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+                <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+                <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+                <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+                <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+                <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+                <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+                <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+                <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+                <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+                <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+                <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+                <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+                <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +207,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,6 +317,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -682,11 +740,13 @@
       <workItem from="1416534383377" duration="15341000" />
       <workItem from="1416577973485" duration="1500000" />
       <workItem from="1416663940231" duration="362000" />
+      <workItem from="1416740097219" duration="25000" />
+      <workItem from="1416740166508" duration="699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42907000" />
+    <option name="totallyTimeSpent" value="43631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
@@ -706,19 +766,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3305921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24506828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24431819" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21546052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3305921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -762,7 +822,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="4860">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
+          <folding>
+            <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+            <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+            <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+            <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+            <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+            <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+            <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+            <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+            <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+            <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+            <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+            <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+            <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+            <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+            <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+            <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+            <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+            <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+            <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+            <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+            <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+            <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -784,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1152">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +945,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="4626">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+            <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+            <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+            <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+            <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+            <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+            <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+            <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+            <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+            <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+            <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+            <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+            <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+            <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+            <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+            <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+            <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+            <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+            <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+            <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+            <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+            <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -894,7 +1069,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="4626">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+            <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+            <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+            <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+            <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+            <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+            <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+            <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+            <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+            <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+            <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+            <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+            <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+            <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+            <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+            <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+            <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+            <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+            <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+            <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+            <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+            <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -960,7 +1193,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="4212">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
+          <folding>
+            <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+            <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+            <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+            <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+            <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+            <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+            <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+            <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+            <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+            <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+            <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+            <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+            <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+            <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+            <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+            <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+            <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+            <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+            <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+            <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+            <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+            <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,7 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="432">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1152">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,14 +1403,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.740741" vertical-offset="331" max-vertical-offset="4986">
           <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1416587572447" expanded="true" signature="2477:2911" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2498:2900" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1416587572447" expanded="true" signature="2645:2886" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="2961:8601" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="3174:5688" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="3175:3558" placeholder="{&quot;y&quot;: 55.11...}" />
+            <marker date="1416587572447" expanded="true" signature="3288:3536" placeholder="{&quot;name&quot;: '网络媒体'...}" />
+            <marker date="1416587572447" expanded="true" signature="3560:3917" placeholder="{&quot;y&quot;: 21.63...}" />
+            <marker date="1416587572447" expanded="true" signature="3673:3895" placeholder="{&quot;name&quot;: '新浪微博'...}" />
+            <marker date="1416587572447" expanded="true" signature="3919:4272" placeholder="{&quot;y&quot;: 11.94...}" />
+            <marker date="1416587572447" expanded="true" signature="4032:4250" placeholder="{&quot;name&quot;: '百度贴吧'...}" />
+            <marker date="1416587572447" expanded="true" signature="4274:4654" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4386:4632" placeholder="{&quot;name&quot;: '博客'...}" />
+            <marker date="1416587572447" expanded="true" signature="4656:4997" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="4768:4975" placeholder="{&quot;name&quot;: '论坛'...}" />
+            <marker date="1416587572447" expanded="true" signature="4999:5339" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5111:5317" placeholder="{&quot;name&quot;: '其他SNS'...}" />
+            <marker date="1416587572447" expanded="true" signature="5341:5687" placeholder="{&quot;y&quot;: 7.15...}" />
+            <marker date="1416587572447" expanded="true" signature="5453:5665" placeholder="{&quot;name&quot;: 'NewsEye'...}" />
+            <marker date="1416587572447" expanded="true" signature="5751:6079" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="5897:6024" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6135:8539" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6160:6214" placeholder="{&quot;type&quot;: 'column'...}" />
+            <marker date="1416587572447" expanded="true" signature="6239:6296" placeholder="{&quot;text&quot;: '各模块爬虫使用情况'...}" />
+            <marker date="1416587572447" expanded="true" signature="6324:6385" placeholder="{&quot;text&quot;: '点击柱状图显示详细使用信息'...}" />
+            <marker date="1416587572447" expanded="true" signature="6410:6472" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6497:6607" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6526:6589" placeholder="{&quot;text&quot;: '一周内抓取数量'...}" />
+            <marker date="1416587572447" expanded="true" signature="6638:7796" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6668:7778" placeholder="{&quot;cursor&quot;: 'pointer'...}" />
+            <marker date="1416587572447" expanded="true" signature="6744:7349" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6782:7323" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6834:7293" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="6955:7129" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7135:7259" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7387:7756" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="7513:7595" placeholder="{&quot;fontWeight&quot;: 'bold'...}" />
+            <marker date="1416587572447" expanded="true" signature="7647:7730" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7823:8296" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="7867:8278" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8049:8144" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8150:8222" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8322:8442" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="8323:8441" placeholder="{&quot;color&quot;: 'white'...}" />
+            <marker date="1416587572447" expanded="true" signature="8471:8525" placeholder="{&quot;enabled&quot;: false...}" />
+            <marker date="1416587572447" expanded="true" signature="8653:10243" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8695:10231" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="8720:8867" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1416587572447" expanded="true" signature="8892:8949" placeholder="{&quot;text&quot;: '各模块爬虫比例分布'...}" />
+            <marker date="1416587572447" expanded="true" signature="8976:9076" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'...}" />
+            <marker date="1416587572447" expanded="true" signature="9107:9558" placeholder="{...}" />
+            <marker date="1416587572447" expanded="true" signature="9134:9540" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9263:9518" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1416587572447" expanded="true" signature="9584:10217" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9585:10216" placeholder="{&quot;name&quot;: 'Browser share'...}" />
+            <marker date="1416587572447" expanded="true" signature="9689:10198" placeholder="[...]" />
+            <marker date="1416587572447" expanded="true" signature="9848:10046" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/paper/newseye.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26535627" vertical-offset="1512" max-vertical-offset="4824">
-          <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.6022305" vertical-offset="378" max-vertical-offset="4824">
+          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
           <folding />
         </state>
       </provider>
