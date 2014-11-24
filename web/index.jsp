@@ -1,9 +1,4 @@
-<%@ page import="java.net.URL" %>
-<%@ page import="java.net.HttpURLConnection" %>
-<%@ page import="java.io.BufferedReader" %>
-<%@ page import="java.io.InputStreamReader" %>
-<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
-<%@ page import="com.glacier.spider.other.UserInfo" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -12,8 +7,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
+<%@ page import="java.net.URL" %>
+<%@ page import="java.net.HttpURLConnection" %>
+<%@ page import="java.io.BufferedReader" %>
+<%@ page import="java.io.InputStreamReader" %>
 
-    <%@include file="header.jsp"%>
+<%@include file="header.jsp"%>
     <body>
     <%
         String code = request.getParameter("code");
@@ -28,8 +28,8 @@
             String json = reader.readLine();
             if ( json != null )  {  //登陆成功
                 AccessTokenJSON.setAccessTokenJSON(json);
-                UserInfo.init();
                 session.setAttribute("login", "success");
+                session.setAttribute("json", json);
             }
         }
     %>
