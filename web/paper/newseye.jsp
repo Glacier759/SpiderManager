@@ -17,7 +17,7 @@
                     <br />
                     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-                    <form class="form" method="get" action="#">
+                    <form class="form" method="get" action="<%=request.getContextPath()%>/newseye.submit">
                         <div class="form-group">
                             <h3>配置编辑</h3>
                             <div class="panel panel-default">

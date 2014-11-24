@@ -12,12 +12,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page session="false" %>
 
     <%@include file="header.jsp"%>
     <body>
     <%
-        HttpSession session = null;
         String code = request.getParameter("code");
         String accessTokenURL = null;
         if (code != null) {
@@ -28,9 +26,10 @@
             connection.connect();
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String json = reader.readLine();
-            if ( json != null ) {
+            if ( json != null )  {  //登陆成功
                 AccessTokenJSON.setAccessTokenJSON(json);
                 UserInfo.init();
+                session.setAttribute("login", "success");
             }
         }
     %>

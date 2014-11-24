@@ -1,3 +1,4 @@
+<%@ page import="com.glacier.spider.other.UserInfo" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -16,7 +17,19 @@
                     <li><a href="<%=request.getContextPath()%>/index.jsp">主页</a></li>
                     <li><a href="#">监控</a></li>
                     <li><a href="#">帮助</a></li>
+                    <%
+                        String attr = (String) session.getAttribute("login");
+                        if ( attr == null ) {
+                    %>
                     <li><a href="https://api.weibo.com/oauth2/authorize?client_id=462118737&response_type=code&redirect_uri=http://spider.glacierlx.com">登陆</a></li>
+                    <%
+                        }
+                        else {
+                            %>
+                    <li><a href="#"><%=UserInfo.getValue("screen_name")%></a> </li>
+                    <%
+                        }
+                    %>
                 </ul>
                 <form class="navbar-form navbar-right">
                     <input type="text" class="form-control" placeholder="检索...">
