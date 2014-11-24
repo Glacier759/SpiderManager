@@ -3,6 +3,7 @@
 <%@ page import="java.io.BufferedReader" %>
 <%@ page import="java.io.InputStreamReader" %>
 <%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
+<%@ page import="com.glacier.spider.other.UserInfo" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -29,15 +30,8 @@
             String json = reader.readLine();
             if ( json != null ) {
                 AccessTokenJSON.setAccessTokenJSON(json);
-                request.getSession(true);
+                UserInfo.init();
             }
-        }
-        if ( session == null ) {
-            %>
-        <script>
-            alert("你没有登陆");
-        </script>
-    <%
         }
     %>
     <%@include file="top.jsp"%>
@@ -56,20 +50,6 @@
     <script src="<%=request.getContextPath()%>/resource/Bootstrap/js/bootstrap.min.js"></script>
     <script src="<%=request.getContextPath()%>/resource/js/highcharts.js"></script>
     <script src="<%=request.getContextPath()%>/resource/js/exporting.js"></script>
-    <script>
-        function getAccessToken() {
-            $.ajax({
-                url: <%=accessTokenURL%>,
-                type: "GET",
-                dataType: "JSON",
-                success: function(data) {
-                    var objson = eval(data);
-                    document.getElementById('json').setAttribute('value',objson.access_token);
-                    document.getElementById('json').setAttribute('test','sadas');
-                }
-            })
-        }
-    </script>
     <script>
         $(function () {
 
