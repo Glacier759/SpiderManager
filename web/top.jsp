@@ -1,4 +1,3 @@
-<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
 <%@ page import="com.glacier.spider.other.UserInfo" %>
 <%--
   Created by IntelliJ IDEA.
@@ -8,6 +7,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -20,9 +23,7 @@
                     <li><a href="#">帮助</a></li>
                     <%
                         if ( session.getAttribute("login") != null ) {
-                            %>
-                        <h1><%=AccessTokenJSON.getuid()%></h1>
-                    <%
+
                         }
                     %>
                     <li><a href="https://api.weibo.com/oauth2/authorize?client_id=462118737&response_type=code&redirect_uri=http://spider.glacierlx.com">登陆</a></li>

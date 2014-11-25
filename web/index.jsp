@@ -7,7 +7,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
 <%@ page import="java.net.URL" %>
 <%@ page import="java.net.HttpURLConnection" %>
 <%@ page import="java.io.BufferedReader" %>
@@ -27,7 +26,9 @@
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String json = reader.readLine();
             if ( json != null )  {  //登陆成功
-                AccessTokenJSON.setAccessTokenJSON(json);
+    //            AccessTokenJSON.setAccessTokenJson(json);
+      //          JSONObject jsonObject = new JSONObject(json);
+        //        AccessTokenJSON.setAccessToken(jsonObject.getString("access_token"));
                 session.setAttribute("login", "success");
                 session.setAttribute("json", json);
             }
