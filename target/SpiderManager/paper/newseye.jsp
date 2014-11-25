@@ -190,7 +190,7 @@
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" placeholder="标题所在标签" />
+                                                            <input type="text" class="form-control" placeholder="标题所在标签" name="title_tag" />
                                                             <span class="input-group-addon">
                                                                 <input type="radio" name="title_draw" value="attr" />提取属性值
                                                                 <input type="radio" name="title_draw" value="text" />提取文本值
@@ -204,7 +204,7 @@
                                                 <br />
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <input type="text" class="form-control" placeholder="发布时间提取，目前仅支持从URL中获取时间，现支持四种格式，例:2014-11/24使用XXXX-XX/XX表示" name="url_format" />
+                                                        <input type="text" class="form-control" placeholder="发布时间提取，目前仅支持从URL中获取时间，现支持四种格式，例:2014-11/24使用XXXX-XX/XX表示" name="time_format" />
                                                     </div>
                                                 </div>
                                                 <br />
