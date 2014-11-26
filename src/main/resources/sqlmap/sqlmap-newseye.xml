@@ -70,6 +70,15 @@
         INSERT INTO spider_config
         (uid, aid, conf)
         VALUES
-        (#{uid}, #{aid}, #{conf})
+        (#{uid}, #{aid}, #{conf});
     </insert>
+    <select id="selectConfigExist" parameterType="UserConfig" resultType="java.lang.Integer">
+        SELECT count(*) FROM spider_config WHERE uid = #{uid} AND aid = #{aid};
+    </select>
+    <update id="updateUserConfig" parameterType="UserConfig">
+        UPDATE spider_config SET conf = #{conf},submit_date = NOW() WHERE uid = #{uid} AND aid = #{aid};
+    </update>
+    <select id="selectUserConfig" parameterType="UserConfig" resultType="java.lang.String">
+        SELECT conf FROM spider_config WHERE uid = #{uid} AND aid = #{aid};
+    </select>
 </mapper>

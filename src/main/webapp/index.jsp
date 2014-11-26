@@ -4,6 +4,7 @@
 <%@ page import="com.glacier.spider.weibo4j.model.User" %>
 <%@ page import="com.glacier.spider.save.SaveData" %>
 <%@ page import="com.glacier.spider.chart.Histogram" %>
+<%@ page import="com.glacier.spider.chart.Pie" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -230,21 +231,23 @@
                 },
                 series: [{
                     type: 'pie',
-                    name: 'Browser share',
-                    data: [
+                    name: '抓取占比',
+                    <%Pie.init();%>
+                    data: [<%=Pie.getData()%>]
+                    /*data: [
                         ['Firefox',   45.0],
                         ['IE',       26.8],
                         ['Chrome',   12.8],
-                        /*{
+                        *//*{
                             name: 'Chrome',
                             y: 12.8,
                             sliced: true,
                             selected: true
-                        },*/
+                        },*//*
                         ['Safari',    8.5],
                         ['Opera',     6.2],
                         ['Others',   0.7]
-                    ]
+                    ]*/
                 }]
             });
         });

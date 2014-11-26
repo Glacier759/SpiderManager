@@ -19,11 +19,25 @@
 
                     <form class="form" method="get" action="<%=request.getContextPath()%>/newseye.submit">
                         <div class="form-group">
+
+                        <%
+                            if ( session.getAttribute("user") == null ) {
+                        %>
+                        <br />
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">未登录</div>
+                            <div class="panel-body">您还没有登录，不能进行配置编辑</div>
+                        </div>
+                        <br />
+                        <%
+                            }
+                        %>
                             <h3>配置编辑</h3>
                             <div class="panel panel-default">
                                 <div class="panel-heading">配置说明</div>
                                 <div class="panel-body">啊添加一个类啊添加一个起始文件啊添加一堆一堆属性参数啊啊啊</div>
                             </div>
+
                             <div id="paper-config">
                                 <div class="panel panel-success">
                                     <div class="panel-heading">报刊配置</div>
@@ -66,10 +80,12 @@
                                                 <div class="row">
                                                     <div class="col-lg-2">
                                                         <div class="input-group">
-                                                            <button type="button" class="btn btn-default" name="addnewspaper">
+                                                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                                                                    title="增加一个报刊" name="addnewspaper">
                                                                 <span class="glyphicon glyphicon-plus" />
                                                             </button>
-                                                            <button type="button" class="btn btn-default " name="minusnewspaper">
+                                                            <button type="button" class="btn btn-default " data-toggle="tooltip" data-placement="bottom"
+                                                                    title="减少一个报刊" name="minusnewspaper">
                                                                 <span class="glyphicon glyphicon-minus" />
                                                             </button>
                                                         </div>
@@ -232,8 +248,22 @@
                             </div> <!--所有报刊配置信息-->
                             <%--<button type="button" class="btn btn-success disabled" id="addclass">增加类别</button>--%>
                             <%--<button type="button" class="btn btn-warning disabled" id="minusclass">删除类别</button>--%>
-                            <button class="btn btn-primary" type="button" id="append_submit" name="append_submit">追加配置</button>
-                            <button class="btn btn-warning" type="button" id="cover_submit" name="cover_submit">覆盖配置</button>
+                            <%
+                                if ( session.getAttribute("user") == null ) {
+                                    %>
+                                    <button class="btn btn-primary disabled" type="button" id="append_submit" name="append_submit">追加配置</button>
+                                    <button class="btn btn-warning disabled" type="button" id="cover_submit" name="cover_submit">覆盖配置</button>
+                                    <%
+                                }
+                                else {
+                                    %>
+                                    <button class="btn btn-primary" type="button" id="append_submit" name="append_submit" data-toggle="tooltip"
+                                            data-placement="bottom" title="增加一个类">追加配置</button>
+                                    <button class="btn btn-warning" type="button" id="cover_submit" name="cover_submit" data-toggle="tooltip"
+                                            data-plavement="bottom" title="覆盖所有配置">覆盖配置</button>
+                                    <%
+                                }
+                            %>
                             <div class="modal fade" id="confirm">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -261,6 +291,13 @@
         <script src="<%=request.getContextPath()%>/js/highcharts.js"></script>
         <script src="<%=request.getContextPath()%>/js/exporting.js"></script>
         <script>
+            <%
+                if(session.getAttribute("user") == null) {
+            %>
+                $("#paper-config input").attr("disabled","disabled");
+            <%
+                }
+            %>
             $(function() {
                 $("#append_submit").click(function() {
                     $("#submit_content").text("追加配置将会在原有的该应用的配置文件后追加新的配置文件，认为其为新的类别")

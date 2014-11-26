@@ -31,8 +31,8 @@
             </ul>
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"><h4>微博(新浪)</h4></li>
-                <li id="weibop"><a href="#">人物为中心</a></li>
-                <li id="weibow"><a href="#">微博为中心</a></li>
+                <li id="weibop"><a href="<%=request.getContextPath()%>/weibo/person.jsp">人物为中心</a></li>
+                <li id="weibow"><a href="<%=request.getContextPath()%>/weibo/weibo.jsp">微博为中心</a></li>
             </ul>
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"><h4>贴吧</h4></li>

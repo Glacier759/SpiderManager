@@ -16,6 +16,12 @@ public class Histogram {
 
     public static List<HistogramData> histogramDatas = null;
 
+    public static void putHistogramData(HistogramData histogramData) {
+        if ( histogramDatas == null )
+            histogramDatas = new ArrayList<HistogramData>();
+        histogramDatas.add(histogramData);
+    }
+
     public static void init() {
         histogramDatas = new ArrayList<HistogramData>();
         HistogramData obj1 = new HistogramData();

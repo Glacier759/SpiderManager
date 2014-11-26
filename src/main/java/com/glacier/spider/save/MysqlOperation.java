@@ -13,4 +13,10 @@ public interface MysqlOperation {
     public int selectUserExist(String uid);
 
     public void insertUserConfig(UserConfig conf);
+
+    public int selectConfigExist(UserConfig conf);
+
+    public void updateUserConfig(UserConfig conf);
+
+    public String selectUserConfig(UserConfig conf);
 }

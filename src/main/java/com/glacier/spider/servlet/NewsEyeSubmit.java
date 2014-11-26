@@ -117,12 +117,24 @@ public class NewsEyeSubmit extends HttpServlet {
             SaveData saveData = new SaveData();
             String save_type = request.getParameter("save");
             if ( save_type.equals("cover_submit") ) {
-
+                int count = saveData.selectConfigExist(userConfig);
+                if ( count == 0 )   //如果数据库中不存在配置记录
+                    saveData.insertUserConfig(userConfig);  //插入配置记录
+                else
+                    saveData.updateUserConfig(userConfig);  //更新配置记录(覆盖)
             }
-            else {
-
+            else if( save_type.equals("append_submit") ) {
+                int count = saveData.selectConfigExist(userConfig);
+                if ( count == 0 )
+                    saveData.insertUserConfig(userConfig);
+                else {
+                    String conf = saveData.selectUserConfig(userConfig);
+                    String userConf = userConfig.getConf();
+                    userConfig.setConf(conf.substring(0,conf.lastIndexOf("</SpiderConfig>"))
+                                     + userConf.substring(userConf.indexOf("<class>")));
+                    saveData.updateUserConfig(userConfig);
+                }
             }
-            //saveData.insertUserConfig(userConfig);
 
             response.sendRedirect(request.getContextPath()+"/paper/newseye.jsp");
         }catch (Exception e) {

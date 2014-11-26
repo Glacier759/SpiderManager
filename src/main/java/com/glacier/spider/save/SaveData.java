@@ -64,4 +64,38 @@ public class SaveData {
         }
     }
 
+    public int selectConfigExist(UserConfig config) {
+        try {
+            int count = mapper.selectConfigExist(config);
+            session.commit();
+            return count;
+        }catch (Exception e) {
+            log.debug(e.toString());
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    public void updateUserConfig(UserConfig config) {
+        try {
+            mapper.updateUserConfig(config);
+            session.commit();
+        }catch (Exception e) {
+            log.debug(e.toString());
+            e.printStackTrace();
+        }
+    }
+
+    public String selectUserConfig(UserConfig config) {
+        try {
+            String conf = mapper.selectUserConfig(config);
+            session.commit();
+            return conf;
+        }catch (Exception e) {
+            log.debug(e.toString());
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }
