@@ -230,9 +230,10 @@
                                     </div>
                                 </div> <!--所有报刊信息面板-->
                             </div> <!--所有报刊配置信息-->
-                            <button type="button" class="btn btn-success disabled" id="addclass">增加类别</button>
-                            <button type="button" class="btn btn-warning disabled" id="minusclass">删除类别</button>
-                            <button class="btn btn-primary" type="submit" id="save">提交配置</button>
+                            <%--<button type="button" class="btn btn-success disabled" id="addclass">增加类别</button>--%>
+                            <%--<button type="button" class="btn btn-warning disabled" id="minusclass">删除类别</button>--%>
+                            <button class="btn btn-primary" type="button" id="append_submit" name="append_submit">追加配置</button>
+                            <button class="btn btn-warning" type="button" id="cover_submit" name="cover_submit">覆盖配置</button>
                             <div class="modal fade" id="confirm">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -241,11 +242,11 @@
                                             <h4 class="modal-title">保存配置</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p>确认提交当前配置文件？</p>
+                                            <p id="submit_content"></p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                                            <button type="button" class="btn btn-primary">保存</button>
+                                            <button type="submit" class="btn btn-primary" id="submit_form" name="save" value="save">保存</button>
                                         </div>
                                     </div><!-- /.modal-content -->
                                 </div><!-- /.modal-dialog -->
@@ -261,7 +262,14 @@
         <script src="<%=request.getContextPath()%>/js/exporting.js"></script>
         <script>
             $(function() {
-                $("#save").click(function() {
+                $("#append_submit").click(function() {
+                    $("#submit_content").text("追加配置将会在原有的该应用的配置文件后追加新的配置文件，认为其为新的类别")
+                    $("#submit_form").attr("value", "append_submit");
+                    $("#confirm").modal("toggle");
+                });
+                $("#cover_submit").click(function() {
+                    $("#submit_content").text("覆盖配置将会清空原有该应用的配置文件，新提交的配置文件将会作为程序运行时解析的内容")
+                    $("#submit_form").attr("value", "cover_submit");
                     $("#confirm").modal("toggle");
                 });
             });

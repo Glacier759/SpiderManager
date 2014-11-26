@@ -1,6 +1,8 @@
 package com.glacier.spider.servlet;
 
 
+import com.glacier.spider.save.SaveData;
+import com.glacier.spider.save.sqlclass.UserConfig;
 import org.apache.commons.io.FileUtils;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -10,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -21,24 +24,6 @@ import java.util.List;
 
 @WebServlet("/newseye.submit")
 public class NewsEyeSubmit extends HttpServlet {
-
-    public static String testXML = null;
-
-    private static class NewsEyeConfig{
-        private static class Paper {
-            String paper_name, paper_starturl, paper_encode;
-        }
-        static List<Paper> paper_list = new ArrayList<Paper>();
-        static String  page_url_outer, page_url_node, page_url_tag,
-                page_url_attr, page_url_draw, page_url_sub,
-                page_url_front, page_url_rear, page_url_have;
-        static String  news_url_outer, news_url_node, news_url_tag,
-                news_url_attr, news_url_draw, news_url_sub,
-                news_url_front, news_url_rear, news_url_have;
-        static String  title_outer, title_draw, title_attr,
-                url_format, content_outer, content_tag,
-                img_outer, img_tag;
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
         try {
@@ -123,9 +108,23 @@ public class NewsEyeSubmit extends HttpServlet {
             pageObj = imgEle.addElement("img_tag");
             pageObj.addText(request.getParameter("img_tag"));
 
-            PrintWriter out = response.getWriter();
-            out.println(request.getParameter("paper_name"));
-            out.println(root.asXML());
+            HttpSession session = request.getSession();
+            String uid = (String)session.getAttribute("uid");
+            UserConfig userConfig = new UserConfig();
+            userConfig.setUid(uid);
+            userConfig.setAid(1);
+            userConfig.setConf(root.asXML());
+            SaveData saveData = new SaveData();
+            String save_type = request.getParameter("save");
+            if ( save_type.equals("cover_submit") ) {
+
+            }
+            else {
+
+            }
+            //saveData.insertUserConfig(userConfig);
+
+            response.sendRedirect(request.getContextPath()+"/paper/newseye.jsp");
         }catch (Exception e) {
             e.printStackTrace();
         }

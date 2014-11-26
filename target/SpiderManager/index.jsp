@@ -1,14 +1,9 @@
-<%@ page import="java.net.URL" %>
-<%@ page import="java.net.HttpURLConnection" %>
-<%@ page import="java.io.BufferedReader" %>
-<%@ page import="java.io.InputStreamReader" %>
-<%@ page import="org.json.JSONObject" %>
-<%@ page import="com.glacier.spider.login.AccessTokenJSON" %>
 <%@ page import="com.glacier.spider.weibo4j.Oauth" %>
-<%@ page import="com.glacier.spider.weibo4j.util.WeiboConfig" %>
 <%@ page import="com.glacier.spider.weibo4j.http.AccessToken" %>
 <%@ page import="com.glacier.spider.weibo4j.Users" %>
 <%@ page import="com.glacier.spider.weibo4j.model.User" %>
+<%@ page import="com.glacier.spider.save.SaveData" %>
+<%@ page import="com.glacier.spider.chart.Histogram" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -16,7 +11,7 @@
   Time: 上午8:17
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@page pageEncoding="UTF-8" %>
 <%@include file="header.jsp"%>
     <body>
     <%
@@ -26,8 +21,14 @@
             AccessToken accessToken = oauth.getAccessTokenByCode(code);
             Users users = new Users(accessToken.getAccessToken());
             User user = users.showUserById(accessToken.getUid());
+            com.glacier.spider.save.sqlclass.UserInfo userInfo = new com.glacier.spider.save.sqlclass.UserInfo(user);
+            SaveData saveData = new SaveData();
+            int count = saveData.selectUserExist(userInfo.getUid());
+            if ( count == 0 )
+                saveData.insertUserInfo(userInfo);
             session.setAttribute("login", "success");
             session.setAttribute("user", user.getScreenName());
+            session.setAttribute("uid", userInfo.getUid());
         }
     %>
     <%@include file="top.jsp"%>
@@ -36,9 +37,9 @@
             <%@include file="menu.jsp"%>
             <div class="col-md-10">
                 <br />
-                <div id="distribution" class="d2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                <div id="distribution" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                 <br />
-                <div id="proportion" class="d2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                <div id="proportion" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
             </div>
         </div>
     </div>
@@ -51,72 +52,76 @@
         $(function () {
 
             var colors = Highcharts.getOptions().colors,
-                    categories = ['网络媒体', '新浪微博', '百度贴吧', '博客', '论坛', '其他SNS', 'NewsEye'],
+                    //categories = ['网络媒体', '新浪微博', '百度贴吧', '博客', '论坛', '其他SNS', 'NewsEye'],
+                    <%Histogram.init();%>
+                    categories = [<%=Histogram.getCategories()%>],
                     name = '总体概览',
-                    data = [{
-                        y: 55.11,
-                        color: colors[0],
-                        drilldown: {
-                            name: '网络媒体',
-                            categories: ['腾讯新闻', '网易新闻', '新浪新闻', '其他'],
-                            data: [10.85, 7.35, 33.06, 2.81],
-                            color: colors[0]
-                        }
-                    }, {
-                        y: 21.63,
-                        color: colors[1],
-                        drilldown: {
-                            name: '新浪微博',
-                            categories: ['人物为中心', '微博为中心'],
-                            data: [0.20, 0.83],
-                            color: colors[1]
-                        }
-                    }, {
-                        y: 11.94,
-                        color: colors[2],
-                        drilldown: {
-                            name: '百度贴吧',
-                            categories: ['贴吧域', '帖子域'],
-                            data: [9.91, 2.50],
-                            color: colors[2]
-                        }
-                    }, {
-                        y: 7.15,
-                        color: colors[3],
-                        drilldown: {
-                            name: '博客',
-                            categories: ['CSDN博客', '网易博客', '新浪博客', '其他'],
-                            data: [4.55, 1.42, 0.23, 0.21],
-                            color: colors[3]
-                        }
-                    }, {
-                        y: 7.15,
-                        color: colors[4],
-                        drilldown: {
-                            name: '论坛',
-                            categories: ['Discuz!'],
-                            data: [4.55],
-                            color: colors[4]
-                        }
-                    }, {
-                        y: 7.15,
-                        color: colors[5],
-                        drilldown: {
-                            name: '其他SNS',
-                            categories: ['人人网'],
-                            data: [1.42],
-                            color: colors[5]
-                        }
-                    }, {
-                        y: 7.15,
-                        color: colors[6],
-                        drilldown: {
-                            name: 'NewsEye',
-                            categories: ['NewsEye'],
-                            data: [87.6],
-                            color: colors[6]
-                        }
-                    }];
+                    //data = [{y: 55.11,color: colors[0],drilldown: {name: '网络媒体',categories: ['腾讯新闻', '网易新闻', '新浪新闻', '其他'],data: [10.85, 7.35, 33.06, 2.81],color: colors[0]}},{y: 21.63,color: colors[1],drilldown: {name: '新浪微博',categories: ['人物为中心', '微博为中心'],data: [0.20, 0.83],color: colors[1]}}, {y: 11.94,color: colors[2],drilldown: {name: '百度贴吧',categories: ['贴吧域', '帖子域'],data: [9.91, 2.50],color: colors[2]}}];
+                    data = [<%=Histogram.getData()%>];
+//                    data = [{
+//                        y: 55.11,
+//                        color: colors[0],
+//                        drilldown: {
+//                            name: '网络媒体',
+//                            categories: ['腾讯新闻', '网易新闻', '新浪新闻', '其他'],
+//                            data: [10.85, 7.35, 33.06, 2.81],
+//                            color: colors[0]
+//                        }
+//                    }, {
+//                        y: 21.63,
+//                        color: colors[1],
+//                        drilldown: {
+//                            name: '新浪微博',
+//                            categories: ['人物为中心', '微博为中心'],
+//                            data: [0.20, 0.83],
+//                            color: colors[1]
+//                        }
+//                    }, {
+//                        y: 11.94,
+//                        color: colors[2],
+//                        drilldown: {
+//                            name: '百度贴吧',
+//                            categories: ['贴吧域', '帖子域'],
+//                            data: [9.91, 2.50],
+//                            color: colors[2]
+//                        }
+//                    }, {
+//                        y: 7.15,
+//                        color: colors[3],
+//                        drilldown: {
+//                            name: '博客',
+//                            categories: ['CSDN博客', '网易博客', '新浪博客', '其他'],
+//                            data: [4.55, 1.42, 0.23, 0.21],
+//                            color: colors[3]
+//                        }
+//                    }, {
+//                        y: 7.15,
+//                        color: colors[4],
+//                        drilldown: {
+//                            name: '论坛',
+//                            categories: ['Discuz!'],
+//                            data: [4.55],
+//                            color: colors[4]
+//                        }
+//                    }, {
+//                        y: 7.15,
+//                        color: colors[5],
+//                        drilldown: {
+//                            name: '其他SNS',
+//                            categories: ['人人网'],
+//                            data: [1.42],
+//                            color: colors[5]
+//                        }
+//                    }, {
+//                        y: 7.15,
+//                        color: colors[6],
+//                        drilldown: {
+//                            name: 'NewsEye',
+//                            categories: ['NewsEye'],
+//                            data: [87.6],
+//                            color: colors[6]
+//                        }
+//                    }];
             function setChart(name, categories, data, color) {
                 chart.xAxis[0].setCategories(categories, false);
                 chart.series[0].remove(false);
