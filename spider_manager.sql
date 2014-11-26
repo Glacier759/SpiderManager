@@ -88,6 +88,7 @@ CREATE TABLE `spider_user` (
   `createdAt` varchar(30) DEFAULT NULL,
   `gender` char(2) DEFAULT NULL,
   `biFollowersCount` varchar(15) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -110,4 +111,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-26 12:18:03
+-- Dump completed on 2014-11-27  1:07:55
