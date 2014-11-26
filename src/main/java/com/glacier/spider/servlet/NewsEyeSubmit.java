@@ -44,15 +44,20 @@ public class NewsEyeSubmit extends HttpServlet {
         try {
             request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
-
             Document xmlDoc = DocumentHelper.createDocument();
             Element root = xmlDoc.addElement("SpiderConfig");
             Element classEle = root.addElement("class");
-            Element newspaper = classEle.addElement("newspaper");
 
-            newspaper.addAttribute("paper_name", request.getParameter("paper_name"));
-            newspaper.addAttribute("paper_starturl", request.getParameter("paper_starturl"));
-            newspaper.addAttribute("paper_encode", request.getParameter("paper_encode"));
+            String[] paper_names = request.getParameterValues("paper_name");
+            String[] paper_starturls = request.getParameterValues("paper_starturl");
+            String[] paper_encodes = request.getParameterValues("paper_encode");
+
+            for ( int i = 0; i < paper_names.length; i ++ ) {
+                Element newspaper = classEle.addElement("newspaper");
+                newspaper.addAttribute("paper_name", paper_names[i]);
+                newspaper.addAttribute("paper_starturl", paper_starturls[i]);
+                newspaper.addAttribute("paper_encode", paper_encodes[i]);
+            }
 
             Element pageEle = classEle.addElement("page");
             Element pageObj = pageEle.addElement("page_url_outer");
