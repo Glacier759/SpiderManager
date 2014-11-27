@@ -19,4 +19,8 @@ public interface MysqlOperation {
     public void updateUserConfig(UserConfig conf);
 
     public String selectUserConfig(UserConfig conf);
+
+    public void updateUserEmail(UserConfig conf);
+
+    public String selectUserEmail(String uid);
 }

@@ -98,4 +98,24 @@ public class SaveData {
         return null;
     }
 
+    public void updateUserEmail(UserConfig config) {
+        try {
+            mapper.updateUserEmail(config);
+            session.commit();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String selectUserEmail(String uid) {
+        try {
+            String email = mapper.selectUserEmail(uid);
+            session.commit();
+            return email;
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

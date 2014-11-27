@@ -8,7 +8,18 @@ import java.sql.Date;
 public class UserConfig {
 
     int id, aid;
-    String uid, conf;
+    String uid;
+    String conf;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    String email;
     Date submit_date;
 
     public int getId() {

@@ -135,6 +135,12 @@ public class NewsEyeSubmit extends HttpServlet {
                     saveData.updateUserConfig(userConfig);
                 }
             }
+            String email = request.getParameter("user_email");
+            if ( email != null ) {
+                userConfig.setEmail(email);
+                saveData.updateUserEmail(userConfig);
+            }
+
 
             response.sendRedirect(request.getContextPath()+"/paper/newseye.jsp");
         }catch (Exception e) {

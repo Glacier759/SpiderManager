@@ -1,3 +1,4 @@
+<%@ page import="com.glacier.spider.save.SaveData" %>
 <%--
   Created by IntelliJ IDEA.
   User: glacier
@@ -272,6 +273,20 @@
                                             <h4 class="modal-title">保存配置</h4>
                                         </div>
                                         <div class="modal-body">
+                                            <%
+                                                String uid = (String)session.getAttribute("uid");
+                                                String email = new SaveData().selectUserEmail(uid);
+                                                if ( email == null ) {
+                                            %>
+                                            <p>您还未关联邮箱，添加邮箱地址后我们将在抓取结束时通过邮件告知您数据下载地址</p>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">email</span>
+                                                <input type="email" class="form-control" id="inputemail" placeholder="www@example.com" name="user_email" />
+                                            </div>
+                                            <br />
+                                            <%
+                                                }
+                                            %>
                                             <p id="submit_content"></p>
                                         </div>
                                         <div class="modal-footer">

@@ -81,4 +81,10 @@
     <select id="selectUserConfig" parameterType="UserConfig" resultType="java.lang.String">
         SELECT conf FROM spider_config WHERE uid = #{uid} AND aid = #{aid};
     </select>
+    <update id="updateUserEmail" parameterType="UserConfig">
+      UPDATE spider_user SET email = #{email} WHERE uid = #{uid};
+    </update>
+    <select id="selectUserEmail" parameterType="String" resultType="java.lang.String">
+        SELECT email FROM spider_user WHERE uid = #{uid};
+    </select>
 </mapper>

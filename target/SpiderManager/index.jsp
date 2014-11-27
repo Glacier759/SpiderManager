@@ -30,6 +30,7 @@
             session.setAttribute("login", "success");
             session.setAttribute("user", user.getScreenName());
             session.setAttribute("uid", userInfo.getUid());
+            session.setAttribute("head", userInfo.getProfileImageUrl());
         }
     %>
     <%@include file="top.jsp"%>
