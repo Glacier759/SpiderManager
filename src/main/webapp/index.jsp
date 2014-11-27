@@ -58,72 +58,7 @@
                     <%Histogram.init();%>
                     categories = [<%=Histogram.getCategories()%>],
                     name = '总体概览',
-                    //data = [{y: 55.11,color: colors[0],drilldown: {name: '网络媒体',categories: ['腾讯新闻', '网易新闻', '新浪新闻', '其他'],data: [10.85, 7.35, 33.06, 2.81],color: colors[0]}},{y: 21.63,color: colors[1],drilldown: {name: '新浪微博',categories: ['人物为中心', '微博为中心'],data: [0.20, 0.83],color: colors[1]}}, {y: 11.94,color: colors[2],drilldown: {name: '百度贴吧',categories: ['贴吧域', '帖子域'],data: [9.91, 2.50],color: colors[2]}}];
                     data = [<%=Histogram.getData()%>];
-//                    data = [{
-//                        y: 55.11,
-//                        color: colors[0],
-//                        drilldown: {
-//                            name: '网络媒体',
-//                            categories: ['腾讯新闻', '网易新闻', '新浪新闻', '其他'],
-//                            data: [10.85, 7.35, 33.06, 2.81],
-//                            color: colors[0]
-//                        }
-//                    }, {
-//                        y: 21.63,
-//                        color: colors[1],
-//                        drilldown: {
-//                            name: '新浪微博',
-//                            categories: ['人物为中心', '微博为中心'],
-//                            data: [0.20, 0.83],
-//                            color: colors[1]
-//                        }
-//                    }, {
-//                        y: 11.94,
-//                        color: colors[2],
-//                        drilldown: {
-//                            name: '百度贴吧',
-//                            categories: ['贴吧域', '帖子域'],
-//                            data: [9.91, 2.50],
-//                            color: colors[2]
-//                        }
-//                    }, {
-//                        y: 7.15,
-//                        color: colors[3],
-//                        drilldown: {
-//                            name: '博客',
-//                            categories: ['CSDN博客', '网易博客', '新浪博客', '其他'],
-//                            data: [4.55, 1.42, 0.23, 0.21],
-//                            color: colors[3]
-//                        }
-//                    }, {
-//                        y: 7.15,
-//                        color: colors[4],
-//                        drilldown: {
-//                            name: '论坛',
-//                            categories: ['Discuz!'],
-//                            data: [4.55],
-//                            color: colors[4]
-//                        }
-//                    }, {
-//                        y: 7.15,
-//                        color: colors[5],
-//                        drilldown: {
-//                            name: '其他SNS',
-//                            categories: ['人人网'],
-//                            data: [1.42],
-//                            color: colors[5]
-//                        }
-//                    }, {
-//                        y: 7.15,
-//                        color: colors[6],
-//                        drilldown: {
-//                            name: 'NewsEye',
-//                            categories: ['NewsEye'],
-//                            data: [87.6],
-//                            color: colors[6]
-//                        }
-//                    }];
             function setChart(name, categories, data, color) {
                 chart.xAxis[0].setCategories(categories, false);
                 chart.series[0].remove(false);
@@ -235,20 +170,6 @@
                     name: '抓取占比',
                     <%Pie.init();%>
                     data: [<%=Pie.getData()%>]
-                    /*data: [
-                        ['Firefox',   45.0],
-                        ['IE',       26.8],
-                        ['Chrome',   12.8],
-                        *//*{
-                            name: 'Chrome',
-                            y: 12.8,
-                            sliced: true,
-                            selected: true
-                        },*//*
-                        ['Safari',    8.5],
-                        ['Opera',     6.2],
-                        ['Others',   0.7]
-                    ]*/
                 }]
             });
         });
