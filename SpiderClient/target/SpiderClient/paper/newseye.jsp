@@ -6,7 +6,7 @@
   Time: 下午3:55
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
     <%@include file="/header.jsp"%>
     <body>
@@ -18,7 +18,7 @@
                     <br />
                     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-                    <form class="form" method="get" action="<%=request.getContextPath()%>/newseye.submit">
+                    <form class="form" method="post" action="<%=request.getContextPath()%>/newseye.submit">
                         <div class="form-group">
 
                         <%
@@ -104,7 +104,7 @@
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" placeholder="版面地址所在外层标签" name="page_url_outer" />
                                                             <span class="input-group-addon">
-                                                                <input type="radio" name="page_url_node" value="element" /> Element
+                                                                <input type="radio" name="page_url_node" value="element" checked /> Element
                                                                 <input type="radio" name="page_url_node" value="elements" /> Elements
                                                             </span>
                                                         </div>
@@ -119,7 +119,7 @@
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" placeholder="版面地址所在属性" name="page_url_attr" />
                                                             <span class="input-group-addon">
-                                                                <input type="radio" name="page_url_draw" value="fullstring" />获取属性中的完整值
+                                                                <input type="radio" name="page_url_draw" value="fullstring"  checked />获取属性中的完整值
                                                                 <input type="radio" name="page_url_draw" value="substring" />获取属性中的子串
                                                             </span>
                                                         </div>
@@ -155,7 +155,7 @@
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" placeholder="新闻地址所在外层标签" name="news_url_outer" />
                                                             <span class="input-group-addon">
-                                                                <input type="radio" name="news_url_node" value="element" /> Element
+                                                                <input type="radio" name="news_url_node" value="element" checked /> Element
                                                                 <input type="radio" name="news_url_node" value="elements" /> Elements
                                                             </span>
                                                         </div>
@@ -170,7 +170,7 @@
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" placeholder="新闻地址所在属性" name="news_url_attr" />
                                                             <span class="input-group-addon">
-                                                                <input type="radio" name="news_url_draw" value="fullstring" />获取属性中的完整值
+                                                                <input type="radio" name="news_url_draw" value="fullstring"  checked />获取属性中的完整值
                                                                 <input type="radio" name="news_url_draw" value="substring" />获取属性中的子串
                                                             </span>
                                                         </div>
@@ -209,7 +209,7 @@
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" placeholder="标题所在标签" name="title_tag" />
                                                             <span class="input-group-addon">
-                                                                <input type="radio" name="title_draw" value="attr" />提取属性值
+                                                                <input type="radio" name="title_draw" value="attr"  checked />提取属性值
                                                                 <input type="radio" name="title_draw" value="text" />提取文本值
                                                             </span>
                                                         </div>
