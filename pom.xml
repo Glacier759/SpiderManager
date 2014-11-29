@@ -3,8 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.glacier.spider</groupId>
     <artifactId>SpiderManager</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>SpiderServer</module>
+        <module>SpiderClient</module>
+        <module>SpiderClient</module>
+        <module>SpiderClient</module>
+        <module>SpiderClient</module>
+        <module>SpiderClient</module>
+        <module>SpiderClient</module>
+    </modules>
     <name>SpiderManager Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
