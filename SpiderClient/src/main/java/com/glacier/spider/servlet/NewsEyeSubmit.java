@@ -3,7 +3,6 @@ package com.glacier.spider.servlet;
 
 import com.glacier.spider.save.SaveData;
 import com.glacier.spider.save.sqlclass.UserConfig;
-import org.apache.commons.io.FileUtils;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
@@ -13,10 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.File;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by glacier on 14-11-24.
