@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpiderClient/SpiderClient.iml" filepath="$PROJECT_DIR$/SpiderClient/SpiderClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpiderManager.iml" filepath="$PROJECT_DIR$/SpiderManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpiderServer/SpiderServer.iml" filepath="$PROJECT_DIR$/SpiderServer/SpiderServer.iml" />
     </modules>
   </component>
 </project>

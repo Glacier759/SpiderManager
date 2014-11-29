@@ -11,6 +11,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/SpiderClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpiderServer/pom.xml" />
       </list>
     </option>
   </component>

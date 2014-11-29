@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="SpiderClient" />
+        <module name="SpiderServer" />
       </profile>
     </annotationProcessing>
   </component>
