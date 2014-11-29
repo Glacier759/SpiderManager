@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpiderClient/SpiderClient.iml" filepath="$PROJECT_DIR$/SpiderClient/SpiderClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpiderManager.iml" filepath="$PROJECT_DIR$/SpiderManager.iml" />
+    </modules>
+  </component>
+</project>
+
