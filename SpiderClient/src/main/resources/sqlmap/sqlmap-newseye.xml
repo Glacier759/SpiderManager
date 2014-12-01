@@ -55,12 +55,12 @@
     <insert id="insertUserInfo" parameterType="UserInfo" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO spider_user
         (uid, screen_name, name, location, description, url, profileImageUrl, followersCount,
-        friendsCount, statusesCount, favourites, createdAt, gender, biFollowersCount)
+        friendsCount, statusesCount, favourites, createdAt, gender, biFollowersCount, avatarLarge)
         VALUES
         (
           #{uid}, #{screen_name}, #{name}, #{location}, #{description}, #{url}, #{profileImageUrl},
           #{followersCount}, #{friendsCount}, #{statusesCount}, #{favourites}, #{createdAt}, #{gender},
-          #{biFollowersCount}
+          #{biFollowersCount}, #{avatarLarge}
         )
     </insert>
     <select id="selectUserExist" parameterType="String" resultType="java.lang.Integer">

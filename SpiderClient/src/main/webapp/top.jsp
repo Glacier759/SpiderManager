@@ -20,7 +20,7 @@
                     <%
                     if ( session.getAttribute("user") != null ) {
                         %>
-                        <li><a href="#"><%=(String)session.getAttribute("user")%> <img src="<%=(String)session.getAttribute("head")%>" height="20" width="20" />
+                        <li><a href="<%=request.getContextPath()%>/profile.jsp"><%=(String)session.getAttribute("user")%> <img src="<%=(String)session.getAttribute("head")%>" height="20" width="20" />
                         </a></li>
 
                         <%

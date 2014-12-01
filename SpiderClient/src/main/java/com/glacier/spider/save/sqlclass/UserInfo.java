@@ -9,7 +9,7 @@ public class UserInfo {
     int id;
     String uid, screen_name, name, location, description, url, profileImageUrl;
     String followersCount, friendsCount, statusesCount, favourites, createdAt;
-    String gender, biFollowersCount;
+    String gender, biFollowersCount, avatarLarge;
 
     public UserInfo(User user) {
         this.setUid(user.getId());
@@ -26,6 +26,7 @@ public class UserInfo {
         this.setCreatedAt(user.getCreatedAt()+"");
         this.setGender(user.getGender());
         this.setBiFollowersCount(user.getBiFollowersCount()+"");
+        this.setAvatarLarge(user.getAvatarLarge());
     }
 
     public String toString() {
@@ -151,4 +152,8 @@ public class UserInfo {
     public void setBiFollowersCount(String biFollowersCount) {
         this.biFollowersCount = biFollowersCount;
     }
+
+    public void setAvatarLarge(String avatar_large) {   this.avatarLarge = avatar_large;   }
+
+    public String getAvatarLarge() {    return avatarLarge;    }
 }

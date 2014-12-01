@@ -12,7 +12,7 @@
   Time: 上午8:17
   To change this template use File | Settings | File Templates.
 --%>
-<%@page pageEncoding="UTF-8" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@include file="header.jsp"%>
     <body>
     <%
@@ -31,6 +31,7 @@
             session.setAttribute("user", user.getScreenName());
             session.setAttribute("uid", userInfo.getUid());
             session.setAttribute("head", userInfo.getProfileImageUrl());
+            session.setAttribute("largeHead", userInfo.getAvatarLarge());
         }
     %>
     <%@include file="top.jsp"%>
