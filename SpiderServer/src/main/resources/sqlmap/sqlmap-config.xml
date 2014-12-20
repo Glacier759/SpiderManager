@@ -9,6 +9,15 @@
         <result column="conf" property="conf" />
         <result column="submit_date" property="submit_date" />
     </resultMap>
+    <resultMap id="ConfigBatis" type="ConfigBatis">
+        <result column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="aid" property="aid" />
+        <result column="conf" property="conf" />
+        <result column="submit_date" property="submit_date" />
+        <result column="active" property="active" />
+        <result column="bloomfilter" property="bloomfilter" javaType="byte[]" jdbcType="BLOB" typeHandler="org.apache.ibatis.type.ByteArrayTypeHandler" />
+    </resultMap>
     <sql id="UserConfig">
         id,
         uid,
@@ -18,5 +27,8 @@
     </sql>
     <select id="selectUserConfig" parameterType="UserConfig" resultType="java.lang.String">
         SELECT conf FROM spider_config WHERE uid=#{uid} AND aid=#{aid};
+    </select>
+    <select id="getAllConfig" resultType="ConfigBatis">
+        SELECT * FROM spider_config;
     </select>
 </mapper>

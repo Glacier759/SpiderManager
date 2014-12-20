@@ -5,6 +5,7 @@
 
     <typeAliases>
         <typeAlias type="com.glacier.spider.config.UserConfig" alias="UserConfig" />
+        <typeAlias type="com.glacier.spider.config.ConfigBatis" alias="ConfigBatis" />
     </typeAliases>
 
     <environments default="development">
@@ -12,7 +13,7 @@
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://222.24.63.100:9003/spider_manager" />
+                <property name="url" value="jdbc:mysql://localhost/spider_manager" />
                 <property name="username" value="root" />
                 <property name="password" value="linux" />
             </dataSource>

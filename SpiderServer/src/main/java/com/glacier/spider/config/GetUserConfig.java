@@ -13,6 +13,7 @@ import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 
 import java.io.*;
+import java.util.List;
 
 /**
  * Created by glacier on 14-11-29.
@@ -67,22 +68,26 @@ public class GetUserConfig {
     }
 
     public static void main(String[] args) {
-        String config = new GetUserConfig().getUserConfig("2314283235", "1");
-        try {
-            Runtime runtime = Runtime.getRuntime();
-            Process process = runtime.exec("./a.out");
-
-            InputStream inputStream = process.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            StringBuffer buffer = new StringBuffer();
-            String temp = "";
-            while( (temp = reader.readLine()) != null ) {
-                buffer.append(temp);
-            }
-            System.out.println(buffer.toString());
-        }catch (Exception e) {
-            e.printStackTrace();
+//        String config = new GetUserConfig().getUserConfig("2314283235", "1");
+//        try {
+//            Runtime runtime = Runtime.getRuntime();
+//            Process process = runtime.exec("./a.out");
+//
+//            InputStream inputStream = process.getInputStream();
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+//            StringBuffer buffer = new StringBuffer();
+//            String temp = "";
+//            while( (temp = reader.readLine()) != null ) {
+//                buffer.append(temp);
+//            }
+//            System.out.println(buffer.toString());
+//        }catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println(config);
+        List<ConfigBatis> configList = ConfigBatis.getAllConfig();
+        for ( ConfigBatis configBatis:configList ) {
+            System.out.println(configBatis.getConf());
         }
-        System.out.println(config);
     }
 }
