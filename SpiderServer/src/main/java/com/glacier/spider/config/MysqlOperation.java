@@ -9,4 +9,8 @@ public interface MysqlOperation {
     public String selectUserConfig(UserConfig config);
 
     public List<ConfigBatis> getAllConfig();
+
+    public ConfigBatis getConfig(Integer id);
+
+    public String getUserMail(String uid);
 }

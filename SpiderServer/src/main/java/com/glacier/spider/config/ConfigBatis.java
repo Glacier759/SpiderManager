@@ -50,6 +50,20 @@ public class ConfigBatis {
         return null;
     }
 
+    public static ConfigBatis getConfig(Integer id) {
+        try {
+            init();
+            ConfigBatis configBatis = mapper.getConfig(id);
+            session.commit();
+            return configBatis;
+        }catch (Exception e) {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(baos));
+            logger.error(baos.toString());
+            return null;
+        }
+    }
+
     public int getId() {
         return id;
     }
@@ -106,8 +120,16 @@ public class ConfigBatis {
         this.bloomfilter = bloomfilter;
     }
 
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
     private int id, aid, active;
-    private String uid, conf;
+    private String uid, conf, filename;
     private Date submit_date;
     private byte[] bloomfilter;
 }

@@ -16,6 +16,7 @@
         <result column="conf" property="conf" />
         <result column="submit_date" property="submit_date" />
         <result column="active" property="active" />
+        <result column="filename" property="filename" />
         <result column="bloomfilter" property="bloomfilter" javaType="byte[]" jdbcType="BLOB" typeHandler="org.apache.ibatis.type.ByteArrayTypeHandler" />
     </resultMap>
     <sql id="UserConfig">
@@ -30,5 +31,11 @@
     </select>
     <select id="getAllConfig" resultType="ConfigBatis">
         SELECT * FROM spider_config;
+    </select>
+    <select id="getConfig" parameterType="Integer" resultType="ConfigBatis">
+        SELECT * FROM spider_config WHERE id = #{id};
+    </select>
+    <select id="getUserMail" parameterType="String" resultType="String">
+        SELECT spider_user.email FROM spider_user WHERE uid = #{uid};
     </select>
 </mapper>

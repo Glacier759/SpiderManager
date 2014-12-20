@@ -1,10 +1,10 @@
 package com.glacier.spider.config;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
@@ -19,6 +19,9 @@ import java.util.List;
  * Created by glacier on 14-11-29.
  */
 public class GetUserConfig {
+
+    private static Logger logger = Logger.getLogger(GetUserConfig.class.getName());
+
     Reader reader = null;
     SqlSessionFactory sessionFactory = null;
     SqlSession session = null;
@@ -46,9 +49,24 @@ public class GetUserConfig {
             Element root = xmlDoc.getRootElement();
             return formatXML(root.asXML());
         }catch (Exception e) {
-            e.printStackTrace();
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(baos));
+            logger.error(baos.toString());
         }
         return null;
+    }
+
+    public String getUserEmail(String uid) {
+        try {
+            String email = mapper.getUserMail(uid);
+            session.commit();
+            return email;
+        }catch (Exception e) {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(baos));
+            logger.error(baos.toString());
+            return null;
+        }
     }
 
     private String formatXML(String xml) {
@@ -62,7 +80,9 @@ public class GetUserConfig {
             xmlWriter.write(document);
             return writer.toString();
         }catch (Exception e) {
-            e.printStackTrace();
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(baos));
+            logger.error(baos.toString());
         }
         return null;
     }
