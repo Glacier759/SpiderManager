@@ -38,8 +38,8 @@
       <file leaf-file-name="Manager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpiderServer/src/main/java/com/glacier/spider/manager/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79066986" vertical-offset="59" max-vertical-offset="1044">
-              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.36004785" vertical-offset="59" max-vertical-offset="1044">
+              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -982,12 +982,12 @@
       <workItem from="1418088225805" duration="124000" />
       <workItem from="1418092894226" duration="31000" />
       <workItem from="1419070884516" duration="2867000" />
-      <workItem from="1419073759762" duration="5921000" />
+      <workItem from="1419073759762" duration="6054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36562000" />
+    <option name="totallyTimeSpent" value="36695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1282" height="1025" extended-state="6" />
@@ -1450,8 +1450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpiderServer/src/main/java/com/glacier/spider/manager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79066986" vertical-offset="59" max-vertical-offset="1044">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.36004785" vertical-offset="59" max-vertical-offset="1044">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
